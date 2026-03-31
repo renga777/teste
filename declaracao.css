@@ -1,0 +1,73 @@
+.decl-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+  position: relative;
+  z-index: 1;
+}
+
+.decl-card {
+  background: #fffafc;
+  border-radius: 28px;
+  box-shadow: 0 12px 48px rgba(233,30,140,.18);
+  padding: 52px 48px;
+  max-width: 680px;
+  width: 100%;
+  text-align: center;
+  animation: fadeInUp .9s ease both;
+}
+
+.decl-icon {
+  font-size: 3.5rem;
+  margin-bottom: 16px;
+}
+
+.decl-title {
+  font-family: 'Dancing Script', cursive;
+  font-size: clamp(2rem, 6vw, 3rem);
+  color: #2d1a2e;
+  margin-bottom: 32px;
+}
+
+.decl-text {
+  text-align: left;
+  font-size: 1rem;
+  line-height: 1.9;
+  color: #6b4060;
+  font-weight: 300;
+  border-left: 3px solid #e91e8c;
+  padding-left: 20px;
+  margin-bottom: 36px;
+}
+
+.decl-text p { margin-bottom: 16px; }
+.decl-text p:last-child { margin-bottom: 0; }
+
+.decl-assinatura {
+  font-family: 'Dancing Script', cursive;
+  font-size: 1.4rem;
+  color: #e91e8c;
+  margin-bottom: 36px;
+}
+
+.btn-voltar {
+  display: inline-block;
+  padding: 12px 32px;
+  border: 2px solid #e91e8c;
+  color: #e91e8c;
+  text-decoration: none;
+  border-radius: 50px;
+  font-size: .9rem;
+  font-weight: 500;
+  transition: background .25s, color .25s;
+}
+.btn-voltar:hover {
+  background: #e91e8c;
+  color: #fff;
+}
+
+@media (max-width: 600px) {
+  .decl-card { padding: 36px 24px; }
+}
